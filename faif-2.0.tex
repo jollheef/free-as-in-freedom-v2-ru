@@ -1,0 +1,84 @@
+%% Copyright (c) 2002, 2010 Sam Williams
+%% Copyright (c) 2010 Richard M. Stallman
+%% Permission is granted to copy, distribute and/or modify this
+%% document under the terms of the GNU Free Documentation License,
+%% Version 1.3 or any later version published by the Free Software
+%% Foundation; with no Invariant Sections, no Front-Cover Texts, and
+%% no Back-Cover Texts. A copy of the license is included in the
+%% file called ``gfdl.tex''.
+
+\documentclass[pdftex, 10pt]{book}
+\usepackage{url}
+\usepackage[utf8x]{inputenc}
+\usepackage[Lenny]{fncychap}
+\clubpenalty=10000
+\widowpenalty=10000
+
+%% PDF setup
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, 
+           citecolor=blue,
+           filecolor=blue,
+           linkcolor=blue,
+           urlcolor=blue,
+           bookmarksopen=true,
+           pdftitle=Free as in Freedom (2.0): Richard Stallman and the Free Software Revolution,
+           pdfauthor=Richard Stallman and Sam Williams,
+           pdftex}
+
+%% Index
+\usepackage{makeidx}
+\makeindex
+
+%% Endnotes
+\usepackage{endnotes}
+\renewcommand\notesname {Endnotes}
+
+%% Photos
+\usepackage{graphicx}
+\usepackage[labelformat=empty,font={small,it}, width=3.75in]{caption}
+
+%% Paper size
+\usepackage{geometry}
+\geometry{papersize={6in,9in}}
+
+\setcounter{errorcontextlines}{10}
+
+\begin{document}
+\title{Free as in Freedom (2.0): Richard Stallman and the Free Software Revolution}
+\author{Sam Williams \\ Second edition revisions by Richard M. Stallman}
+\date{}
+
+\maketitle
+\thispagestyle{empty}
+\frontmatter
+\include{copyright}
+\thispagestyle{empty}
+\tableofcontents
+\include{rms-preface}
+\include{preface-williams}
+
+\mainmatter
+\include{chap01}
+\include{chap02}
+\include{chap03}
+\include{chap04}
+\include{chap05}
+\include{chap06}
+\include{chap07}
+\include{chap08}
+\include{chap09}
+\include{chap10}
+\include{chap11}
+\include{chap12}
+\include{chap13}
+
+\backmatter
+\include{epilogue}
+\include{appendix}
+\include{gfdl}
+\printindex
+\include{colophon}
+\end{document}
+
+% Initial LaTeX formatting by John Sullivan at the FSF, 2010

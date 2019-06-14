@@ -1,0 +1,39 @@
+%% Copyright (c) 2002, 2010 Sam Williams
+%% Copyright (c) 2010 Richard M. Stallman
+%% Permission is granted to copy, distribute and/or modify this
+%% document under the terms of the GNU Free Documentation License,
+%% Version 1.3 or any later version published by the Free Software
+%% Foundation; with no Invariant Sections, no Front-Cover Texts, and
+%% no Back-Cover Texts. A copy of the license is included in the
+%% file called ``gfdl.tex''.
+
+In 2002, Sam Williams wrote Free as in Freedom, a biography of Richard
+M. Stallman. In its epilogue, Williams expressed hope that choosing to
+distribute his book under the GNU Free Documentation License would
+enable and encourage others to share corrections and their own
+perspectives through modifications to his work.
+
+Free as in Freedom (2.0) is Stallman's revision of the original
+biography. While preserving Williams's viewpoint, it includes factual
+corrections and extensive new commentary by Stallman, as well as new
+prefaces by both authors written for the occasion. It is a rare kind
+of biography, where the reader has the benefit of both the
+biographer's original words and the subject's response.
+
+About the Author:
+
+Richard M. Stallman is an internationally recognized computer
+programmer, political activist, and author. In 1983 he founded the
+free software movement by launching the GNU Project. He coined the
+term "copyleft" and is the main author of several copyleft licenses,
+including the most widely used free software license, the GNU General
+Public License. The GNU/Linux System (the GNU operating system with
+the kernel Linux added) is today used on tens of millions of
+computers.
+
+Stallman is the recipient of numerous awards, including the ACM Grace
+Hopper Award, a MacArthur Foundation fellowship, the Electronic
+Frontier Foundation's Pioneer Award, and the Takeda Award for Social
+and Economic Well-Being. A collection of Stallman's essays, Free
+Software, Free Society, is also available from GNU Press —
+www.gnupress.org.
