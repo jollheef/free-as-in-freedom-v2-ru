@@ -26,6 +26,22 @@ Debian/Ubuntu:
 
 В текущей директории появится файл faif-2.0.pdf.
 
+## fb2, markdown или html версии
+
+Для получения fb2, markdown или html версии можно воспользоваться [pandoc](https://pandoc.org/). Одноименный пакет есть во всех основных дистрибутивах.
+
+fb2:
+
+    pandoc -t fb2 faif-2.0.tex > faif-2.0.fb2
+
+markdown:
+
+    pandoc -t markdown faif-2.0.tex > faif-2.0.md
+
+html:
+
+    pandoc -t html faif-2.0.tex > faif-2.0.html
+
 ## Как следить за проектом?
 
 По мере перевода глав будут происходить релизы с приложением добавленных глав. Следовательно, если вы хотите получать уведомления о появлении перевода новых глав — [подпишитесь на релизы с помощью штатной функциональности GitHub](https://help.github.com/en/articles/watching-and-unwatching-releases-for-a-repository).
