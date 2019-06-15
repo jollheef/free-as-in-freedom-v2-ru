@@ -7,12 +7,21 @@
 %% no Back-Cover Texts. A copy of the license is included in the
 %% file called ``gfdl.tex''.
 
-\documentclass[pdftex, 10pt]{book}
+\documentclass[10pt]{book}
 \usepackage{url}
-\usepackage[utf8x]{inputenc}
 \usepackage[Lenny]{fncychap}
 \clubpenalty=10000
 \widowpenalty=10000
+
+\usepackage{polyglossia}
+\setmainlanguage{russian}
+\setotherlanguage{english}
+
+\usepackage{fontspec}
+\setmainfont{Liberation Serif}
+\newfontfamily{\cyrillicfonttt}{Liberation Mono}
+\setsansfont{Liberation Sans}
+\setmonofont{Liberation Mono}
 
 %% PDF setup
 \usepackage{hyperref}
