@@ -1,6 +1,6 @@
 # [free-as-in-freedom-v2-ru](https://code.dumpstack.io/etc/free-as-in-freedom-v2-ru)
 
-Русский перевод второго издания Free as in Freedom: Richard Stallman's Crusade for Free Software.
+Русский перевод второго издания [Free as in Freedom: Richard Stallman's Crusade for Free Software](https://www.fsf.org/faif/).
 
 ## Как скомпилировать книгу?
 
