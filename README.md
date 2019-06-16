@@ -1,3 +1,5 @@
+[![@faif_ru](https://img.shields.io/static/v1.svg?label=Telegram&message=@faif_ru&color=blue)](https://t.me/faif_ru)
+
 # [free-as-in-freedom-v2-ru](https://code.dumpstack.io/etc/free-as-in-freedom-v2-ru)
 
 Русский перевод второго издания [Free as in Freedom: Richard Stallman's Crusade for Free Software](https://www.fsf.org/faif/).
