@@ -18,7 +18,7 @@ NixOS:
 
 Debian/Ubuntu:
 
-    sudo apt install texlive rubber
+    sudo apt install texlive-full rubber
 
 2 Склонировать репозиторий и запустить сборку.
 
