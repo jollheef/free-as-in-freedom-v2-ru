@@ -1,0 +1,10 @@
+dist: xenial
+
+sudo: required
+
+before_install:
+  - sudo apt update
+  - sudo apt install texlive rubber
+
+script:
+  - make
