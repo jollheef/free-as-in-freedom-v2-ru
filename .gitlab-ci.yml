@@ -1,0 +1,13 @@
+pages:
+  image: debian:10
+  stage: deploy
+  before_script:
+    - apt update && apt install -yq pandoc
+  script:
+    - mkdir public
+    - pandoc -t html faif-2.0.tex > public/index.html
+  artifacts:
+    paths:
+      - public
+  only:
+    - primary
