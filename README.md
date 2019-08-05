@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.org/jollheef/free-as-in-freedom-v2-ru.svg?branch=master)](https://travis-ci.org/jollheef/free-as-in-freedom-v2-ru)
-[![@faif_ru](https://img.shields.io/static/v1.svg?label=Telegram&message=@faif_ru&color=blue)](https://t.me/faif_ru)
 
 # [free-as-in-freedom-v2-ru](https://code.dumpstack.io/etc/free-as-in-freedom-v2-ru)
 
