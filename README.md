@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/jollheef/free-as-in-freedom-v2-ru.svg?branch=master)](https://travis-ci.org/jollheef/free-as-in-freedom-v2-ru)
 
-# [free-as-in-freedom-v2-ru](https://code.dumpstack.io/etc/free-as-in-freedom-v2-ru)
+# [Ричард Столлман и революция свободного программного обеспечения](https://code.dumpstack.io/etc/free-as-in-freedom-v2-ru)
 
 Русский перевод второго издания [Free as in Freedom: Richard Stallman's Crusade for Free Software](https://www.fsf.org/faif/).
 
