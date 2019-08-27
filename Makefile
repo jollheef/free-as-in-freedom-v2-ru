@@ -1,6 +1,14 @@
-all: translators version time
+all: pdf fb2
+
+pdf: metadata
 	rubber -m xelatex faif-2.0.tex
 	cp faif-2.0.pdf faif-2.0-$(shell git describe --abbrev=0 --tags).pdf
+
+fb2: metadata
+	pandoc -t fb2 faif-2.0.tex > faif-2.0.fb2
+	cp faif-2.0.fb2 faif-2.0-$(shell git describe --abbrev=0 --tags).fb2
+
+metadata: translators version time
 
 open: all
 	xdg-open faif-2.0.pdf
