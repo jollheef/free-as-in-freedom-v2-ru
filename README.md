@@ -7,36 +7,16 @@
 
 ## Как скомпилировать книгу?
 
-1 Установить texlive и rubber.
-
-NixOS:
-
-    nix-env -iA nixos.texlive.combined.scheme-full nixos.rubber
-
-Debian/Ubuntu:
-
-    sudo apt install texlive-full rubber
-
-2 Склонировать репозиторий и запустить сборку.
-
-    git clone https://code.dumpstack.io/etc/free-as-in-freedom-v2-ru.git
+	git clone https://code.dumpstack.io/etc/free-as-in-freedom-v2-ru.git
 	cd free-as-in-freedom-v2-ru
+
+#### [Nix](https://nixos.org/nix/download.html):
+
+    nix-shell -p texlive.combined.scheme-full -p rubber -p pandoc --run make
+
+#### Debian/Ubuntu:
+
+    sudo apt install texlive-full rubber pandoc
     make
 
-В текущей директории появится файл faif-2.0.pdf.
-
-## fb2, markdown или html версии
-
-Для получения fb2, markdown или html версии можно воспользоваться [pandoc](https://pandoc.org/). Одноименный пакет есть во всех основных дистрибутивах.
-
-fb2:
-
-    pandoc -t fb2 faif-2.0.tex > faif-2.0.fb2
-
-markdown:
-
-    pandoc -t markdown faif-2.0.tex > faif-2.0.md
-
-html:
-
-    pandoc -t html faif-2.0.tex > faif-2.0.html
+В текущей директории появятся файлы faif-2.0.pdf и faif-2.0.fb2.
