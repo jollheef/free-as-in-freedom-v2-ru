@@ -6,3 +6,13 @@ before_install:
 
 script:
   - make
+
+deploy:
+  provider: releases
+  api_key:
+    secure: qfh2UwOE2Flxc3SViull52SDqXUGeh+tXg6xvV+H1rmc8Y79B/T80+i9gpNLedqF0BOFPiuxnaITBccjH8hzFs/n0EjOScsWo1xESi81qXNSIZQ/+wvK8fStyUAJJIgRZa5A74lGywk+Q1TKESY2/JTiOKhvjvwPrK0mjX02yXbCFYh8vMYDvo3snjEBka5VWRVb9Q+X9shDesEN2GbAXhGCyY+TQJ5Ec/jXmnO0JF4RQgyChgW1wUd7wjhivvEOl+xmQZZzYGlXj24uJ7dI7cA6/lnzrTz/5k43UDw4OcX7/I6SARdVVsmECCrFEVTVUB4eOMLBg7xyKlhFUHvss+cYAUwpVIyfs0OJNcEnNub01EIKjqZDsUoUIjC8uUFXCfpSkuQZoNsEjgkBJbR2Uzoe5vJulCwjyABO7LXirZjN12wpVPfuxEPlELYXwd037VuiyMGmNxU830j+L+R7BV8WSr071C0y3gJOfKNAw2M9E6A1DUQJ4kWepS0wSf2BPK5W8vydK3X3sY5DGAU5jB6ITAnFlH1LC/UGLc2dub5o2wBCsYzj2LTB5jRhMR9F6hlvRD9hVynMgp5/Ywsacm6JVPTyhr/8YY2IXyuYUSX5YV9AbqxCjaqwrMF5zMMtFENisw0XvLAqLH6kFoASOdaDHZthG1MuXGTbAlxDpOw=
+  file_glob: true
+  file: faif-2.0-v*
+  skip_cleanup: true
+  on:
+    tags: true
