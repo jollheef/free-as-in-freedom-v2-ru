@@ -12,7 +12,7 @@
 
 #### [Nix](https://nixos.org/nix/download.html):
 
-    nix-shell -p texlive.combined.scheme-full -p rubber -p pandoc --run make
+    nix-shell --run make
 
 #### Debian/Ubuntu:
 
