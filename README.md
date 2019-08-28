@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/jollheef/free-as-in-freedom-v2-ru.svg?branch=master)](https://travis-ci.org/jollheef/free-as-in-freedom-v2-ru)
+[![Build Status](https://travis-ci.com/jollheef/free-as-in-freedom-v2-ru.svg?branch=primary)](https://travis-ci.org/jollheef/free-as-in-freedom-v2-ru)
 [![Donate](https://img.shields.io/badge/Donate-BitCoin-green.svg)](https://blockchair.com/bitcoin/address/bc1q23fyuq7kmngrgqgp6yq9hk8a5q460f39m8nv87)
 
 # [Ричард Столлман и революция свободного программного обеспечения](https://code.dumpstack.io/etc/free-as-in-freedom-v2-ru)
