@@ -1,8 +1,21 @@
 language: nix
 
+cache:
+  directories:
+  - $HOME/nix.store
+
+before_cache:
+  - mkdir -p $HOME/nix.store
+  - nix copy --to file://$HOME/nix.store -f default.nix buildInputs
+
 before_install:
+  - sudo mkdir -p /etc/nix
+  - echo "substituters = https://cache.nixos.org/ file://$HOME/nix.store" | sudo tee -a /etc/nix/nix.conf > /dev/null
+  - echo 'require-sigs = false' | sudo tee -a /etc/nix/nix.conf > /dev/null
+
+before_script:
   # Make sure that version is up-to-date
   - sed -i "s/version = .*/version = \"$(git describe --abbrev=0 --tags | sed 's/v//')\";/" default.nix
 
 script:
-  - nix-build
+  - nix-build --option sandbox true
