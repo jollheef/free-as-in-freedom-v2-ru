@@ -29,6 +29,7 @@
 translators.tex
 build-time.tex
 build-ver.tex
+result
 
 ## Generated if empty string is given at "Please type another file name for output:"
 .pdf
