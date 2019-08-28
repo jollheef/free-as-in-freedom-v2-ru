@@ -1,4 +1,4 @@
-all: pdf fb2
+all: pdf fb2 epub
 
 pdf: metadata
 	rubber -m xelatex faif-2.0.tex
@@ -7,6 +7,10 @@ pdf: metadata
 fb2: metadata
 	pandoc -t fb2 faif-2.0.tex > faif-2.0.fb2
 	cp faif-2.0.fb2 faif-2.0-$(shell git describe --abbrev=0 --tags).fb2
+
+epub: metadata
+	pandoc -t epub faif-2.0.tex > faif-2.0.epub
+	cp faif-2.0.epub faif-2.0-$(shell git describe --abbrev=0 --tags).epub
 
 metadata: translators version time
 

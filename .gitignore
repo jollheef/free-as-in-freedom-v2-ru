@@ -25,6 +25,7 @@
 *.html
 *.fb2
 *.md
+*.epub
 !README.md
 translators.tex
 build-time.tex
