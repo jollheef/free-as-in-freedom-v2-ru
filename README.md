@@ -12,7 +12,7 @@
 
 #### [Nix](https://nixos.org/nix/download.html):
 
-    nix-shell --run make
+    nix-shell --pure --run make
 
 #### Debian/Ubuntu:
 
