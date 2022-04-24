@@ -52,6 +52,24 @@
 
 \setcounter{errorcontextlines}{10}
 
+% Header and Footer
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+   %%%% Header Settings
+   \fancyhead[RE]{\leftmark}
+   \fancyhead[LO]{\rightmark}
+   \fancyhead[CE,CO]{}
+
+   % Footer Settings
+   \fancyfoot[C]{\thepage}
+
+   % Redefining headrule
+   \makeatletter
+   \renewcommand{\headrule}{\hrule height 0pt}
+
 \begin{document}
 \title{Ричард Столлман и революция свободного программного обеспечения}
 \author{Сэм Вильямс \\ Второе издание с правками от Ричарда Мэттью Столлмана}
@@ -82,6 +100,10 @@
 \include{chap13}
 
 \backmatter
+
+	\renewcommand{\chaptermark}[1]{%
+	\markboth{\MakeUppercase{#1}}{}}
+
 \include{epilogue}
 \include{appendix}
 \include{gfdl}
