@@ -55,8 +55,8 @@
 % Header and Footer
 \usepackage{fancyhdr}
 
-\pagestyle{fancy}
 \fancyhf{}
+
 
 %%%% Header Settings
 \fancyhead[RE]{\leftmark}
@@ -71,20 +71,36 @@
 \renewcommand{\headrule}{\hrule height 0pt}
 
 \begin{document}
+
 \title{Ричард Столлман и революция свободного программного обеспечения}
 \author{Сэм Вильямс \\ Второе издание с правками от Ричарда Мэттью Столлмана}
 \date{}
 
 \maketitle
+
+\begin{sloppypar}
+
 \thispagestyle{empty}
 \frontmatter
 \include{copyright}
 \thispagestyle{empty}
 \tableofcontents
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{%
+\markboth{\MakeUppercase{#1}}{}}
+
 \include{rms-preface}
 \include{preface-williams}
 
 \mainmatter
+
+%% fancy pagestyle redifine
+\renewcommand{\chaptermark}[1]{%
+\markboth{\MakeUppercase{%
+\chaptername\ \thechapter.%
+\ #1}}{}}
+
 \include{chap01}
 \include{chap02}
 \include{chap03}
@@ -101,6 +117,7 @@
 
 \backmatter
 
+%% fancy pagestyle redifine
 \renewcommand{\chaptermark}[1]{%
 \markboth{\MakeUppercase{#1}}{}}
 
@@ -108,6 +125,9 @@
 \include{appendix}
 \include{gfdl}
 \printindex
+
+\end{sloppypar}
+
 \end{document}
 
 % Initial LaTeX formatting by John Sullivan at the FSF, 2010
